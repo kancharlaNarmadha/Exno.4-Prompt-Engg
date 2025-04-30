@@ -29,11 +29,17 @@ The chatbot must provide accurate, friendly, and helpful responses while adaptin
 ## Objective: Simple, direct questions to get concise responses.
 
 1. User Input- My headphones are not turning on.
+   
    AI Response- Please ensure they are fully charged. Try holding the power button for 5 secs.
-2. User Input- Where is my order?
-   AI Response- Can you please provide your order ID?
 
+   
+2. User Input- Where is my order?
+
+   
+   AI Response- Can you please provide your order ID?
 3. User Input- What is your return policy?
+
+
    AI Response- You can return items within 30 days of purchase with the original receipt.
 
 
