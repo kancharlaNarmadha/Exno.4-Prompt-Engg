@@ -28,11 +28,15 @@ The chatbot must provide accurate, friendly, and helpful responses while adaptin
 # 1. Straightforward Prompting
 ## Objective: Simple, direct questions to get concise responses.
 
-| **User Input**                         | **AI Response**                                                                 |
-|---------------------------------------|---------------------------------------------------------------------------------|
-| My headphones are not turning on.     | Please ensure they are fully charged. Try holding the power button for 5 secs. |
-| Where is my order?                    | Can you please provide your order ID?                                          |
-| What is your return policy?           | You can return items within 30 days of purchase with the original receipt.     |
+1. User Input- My headphones are not turning on.
+   AI Response- Please ensure they are fully charged. Try holding the power button for 5 secs.
+2. User Input- Where is my order?
+   AI Response- Can you please provide your order ID?
+
+3. User Input- What is your return policy?
+   AI Response- You can return items within 30 days of purchase with the original receipt.
+
+
 
 ## Observation:
 Straightforward prompts are effective for clear and simple queries but may need follow-up for context.
