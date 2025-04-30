@@ -1,115 +1,93 @@
+# EXP 3: Scenario-Based Report on AI-Powered Chatbot using Prompting Techniques
 
-# Exno.3-Scenario-Based Report Development Utilizing Diverse Prompting Techniques
-### DATE:                                                                            
-### REGISTER NUMBER : 212222110016
-
-### Aim: 
-Scenario-Based Report Development Utilizing Diverse Prompting Techniques
-
-### Algorithm:  
-The goal of this experiment is to design and develop an AI-powered chatbot that can handle customer inquiries, provide support, and improve customer experience in a retail environment. Create prompts using various AI prompting techniques to guide your experiment, data collection, analysis, and report creation
-
-## 1. Scenario Design & Data Collection
- 1. Technique: Role Prompting
-Prompt Example:
-
-You are a retail customer experiencing difficulty tracking your order. Ask the chatbot for help in a polite but urgent tone.
-
-Purpose: Simulate varied customer emotions and tones for chatbot training data.
-
- 2. Technique: Few-Shot Prompting
-Prompt Example:
-
-Customer: “Where’s my order?”
-Bot: “Let me check that for you. Can you share your order ID?”
-Customer: “Here’s my ID: 123456”
-Bot: “Thanks! Your order is out for delivery and should arrive by 7 PM today.”
-
-Purpose: Generate synthetic conversations for training and evaluation datasets.
-
-## 2. Model Training & Experimentation
- 1. Technique: Chain-of-Thought Prompting
-Prompt Example:
-
-A customer wants to return a damaged item. First, ask for the order ID. Then, verify the return policy. Finally, offer return instructions.
-
-Purpose: Train the model to follow logical support flows.
-
- 2. Technique: Instruction Prompting
-Prompt Example:
-
-Given a user query, classify it as one of the following: Order Status, Return Request, Product Inquiry, Store Info, Complaint.
-
-Purpose: Enhance intent classification using direct task instructions.
-
-## 3. Data Analysis & Evaluation
- 1. Technique: Zero-Shot Prompting
-Prompt Example:
-
-Classify the customer query: “Can you tell me if this product comes in red?”
-
-Purpose: Test the chatbot’s generalization capabilities on unseen query types.
-
- 2. Technique: Reflexive Prompting (Self-Critique)
-Prompt Example:
-
-Here is the chatbot’s response: “Sorry, I can’t help you.”
-Evaluate whether this reply is helpful, and suggest a better alternative.
-
-Purpose: Evaluate model performance and improve response relevance.
-
-## 4. Report Creation
- 1. Technique: Persona Prompting
-Prompt Example:
-
-You are an AI researcher presenting findings to retail business stakeholders. Summarize the performance of the chatbot in layman’s terms.
-
-Purpose: Make the report accessible to non-technical readers.
-
- 2. Technique: Comparative Prompting
-Prompt Example:
-
-Compare the chatbot’s performance before and after using fine-tuned intent classification. Use metrics like accuracy, response time, and satisfaction rate.
-
-Purpose: Support claims with clear data comparisons.
-
-## Experiment Workflow Summary
-
-1. Stage	Prompt Type	Purpose
-2. Scenario Design	Role, Few-shot	Generate synthetic customer conversations
-3. Model Training	Chain-of-Thought, Instruction	Improve flow and intent handling
-4. Evaluation	Zero-shot, Reflexive	Test generalization and improve responses
-5. Report Generation	Persona, Comparative	Summarize and present findings effectively
-
- ## Final Report Structure (Suggested)
-1. Introduction
-
-2. Aim, background, chatbot purpose
-
-3. Prompt Design
-
-4. Types of prompts used and their roles
-
-5. Data Collection
-
-6. Methods and sources
-
-7. Model Implementation
-
-8. Architecture, training methods, tools
-
-9. Evaluation Metrics
-
-10. Accuracy, F1-score, customer satisfaction
-
-11. Findings & Analysis
-
-12. Observations from prompt impact
-
-13. Conclusion & Recommendations
-
-14. Improvement areas and future work
+Register Number: 212222110016
 
 
-## Result:
-Thus the Prompts were exected succcessfully .
+
+
+## Aim
+To design an AI-powered chatbot that assists customers in resolving issues related to product troubleshooting, order tracking, and general inquiries using various prompting techniques such as:
+
+1 .Straightforward Prompts
+
+2. Tabular Format Prompting
+
+3. Preceding Question Prompting
+
+## Scenario Description
+A retail company wants to deploy an AI chatbot to automate customer support tasks such as:
+
+- Product troubleshooting (e.g., device not working)
+
+- Order tracking (e.g., delivery status)
+
+- General inquiries (e.g., store hours, return policies)
+
+The chatbot must provide accurate, friendly, and helpful responses while adapting to different types of user queries using multiple prompting techniques.
+
+## 1. Straightforward Prompting
+### Objective: Simple, direct questions to get concise responses.
+
+| **User Input**                         | **AI Response**                                                                 |
+|---------------------------------------|---------------------------------------------------------------------------------|
+| My headphones are not turning on.     | Please ensure they are fully charged. Try holding the power button for 5 secs. |
+| Where is my order?                    | Can you please provide your order ID?                                          |
+| What is your return policy?           | You can return items within 30 days of purchase with the original receipt.     |
+
+### Observation:
+Straightforward prompts are effective for clear and simple queries but may need follow-up for context.
+
+
+
+## 2. Tabular Format Prompting
+### Objective: Structured data input to get organized, precise outputs.
+#### Prompt:
+"Given the following issue details, suggest a solution."
+
+
+| **Issue**         | **Product** | **Symptoms**             | **Attempted Fix**       |
+|------------------|-------------|---------------------------|--------------------------|
+| Not charging     | Smartwatch  | No lights, dead screen    | Used original charger    |
+| Sound distorted  | Speaker     | Static noise when playing | Restarted the speaker    |
+
+#### AI Response:
+
+
+| **Product**  | **Likely Cause**             | **Suggested Action**                            |
+|--------------|------------------------------|--------------------------------------------------|
+| Smartwatch   | Battery or charging port issue| Try a different cable. Visit service center.     |
+| Speaker      | Driver damage or interference | Move away from other electronics. Reset device.  |
+
+### Observation:
+Tabular format allows efficient issue tracking and quick identification of patterns and fixes.
+
+## 3. Preceding Question Prompting
+### Objective: Using prior context to guide the chatbot’s response.
+#### Conversation:
+
+User: My laptop isn't booting.
+AI: Is it showing any lights or making any sounds?
+User: No lights or sounds.
+AI: Please check if the power adapter is plugged in and try a different outlet.
+
+User: I placed an order last week but haven't received it.
+AI: Could you please provide the order number so I can check the status?
+User: It's #45321.
+AI: Thank you. Your order was shipped on April 25 and is expected to arrive by May 2.
+
+### Observation:
+Preceding question prompting improves the flow of conversation and tailors responses based on context.
+
+## Conclusion
+By applying diverse prompting techniques, the chatbot effectively handles customer queries in a human-like manner. Each technique contributes uniquely:
+
+- Straightforward prompting simplifies direct queries.
+
+- Tabular format enhances structured issue resolution.
+
+- Preceding questions ensure contextual and adaptive responses.
+
+  ## Result
+
+This experiment demonstrates how prompting methods influence the quality and efficiency of AI chatbot communication.
+
